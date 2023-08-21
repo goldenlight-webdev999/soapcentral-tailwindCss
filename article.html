@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
         theme: {
-            extend: {
-                // colors: {
-                //     primary: '#c13584',
-                // }
-            }
+            // fontFamily: {
+            //     'sans': ['Source Sans Pro']
+            // }
         }
     }
   </script>
 </head>
 <body>
-    <div class="header">
+    <!-- Desktop Header-->
+    <div class="hidden sm:block">
         <div class="text-center w-100 py-2">
             <img class="mx-auto" src="img/logo.png" alt="soapcentral logo">
         </div>
@@ -60,12 +60,31 @@
         </div>
     </div>
 
+    <!-- Mobile Header-->
+    <div class="header sm:hidden px-4 py-2 border-b border-pink-800">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="cursor-pointer me-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                        <path d="M1 1H22.3333M1 9H22.3333M1 17H10.3333" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="cursor-pointer">
+                    <img class="mx-auto" src="img/logo.png" alt="soapcentral logo">
+                </div>
+            </div>
+            <div class="">
+                <i class="fas fa-search text-pink-800 text-2xl"></i>
+            </div>
+        </div>
+    </div>
+
     <div class="main">
         <div class="container mx-auto">
             <div class="article text-gray-700">
-                <div class="">
+                <div class="px-4 sm:px-0">
                     <div class="text-pink-800 text-sm font-semibold uppercase pt-4">the bold and the beautiful</div>
-                    <h2 class="text-gray-900 font-black text-5xl py-4">Finn has an emotional breakthrough with his mother</h2>
+                    <h2 class="text-gray-900 font-black text-3xl sm:text-5xl py-4">Finn has an emotional breakthrough with his mother</h2>
                     <div class="flex items-center py-4">
                         <div class="pe-2">
                             <img class="mx-auto" src="img/avatars/chanel.png" width="50" height="50" alt="chanel S">
@@ -95,13 +114,13 @@
                     </div>
                 </div>
                 <div class="grid-container grid grid-cols-3">
-                    <div class="col-span-2">
+                    <div class="col-span-3 sm:col-span-2">
                         <img class="mx-auto" src="img/article/1.png" width="100%" height="auto" alt="chanel S">
                     </div>
-                    <div class="col-span-1"></div>
+                    <div class="hidden sm:block col-span-1"></div>
                 </div>
-                <div class="grid-container grid grid-cols-3">
-                    <div class="col-span-2">
+                <div class="grid-container grid grid-cols-3 px-4 sm:px-0">
+                    <div class="col-span-3 sm:col-span-2">
                         <div>
                             <p class="py-2">
                                 At the prison, Finn met Sheila in the visitation area because she'd requested that he conduct her pre-trial exam. As he conducted the exam, he said it shouldn't take long. She quipped that she had no place to be. He asked if she'd had complications since the heart attack. She replied that she panicked whenever her heart raced. She assumed it was stress. Recalling that she could be dead, Sheila told Finn that he could have let her die, but he'd saved his mother's life.
@@ -115,8 +134,8 @@
                         </div>
                         <div class="border-y border-pink-800 py-4">
                             <h3 class="text-pink-800 font-black text-4xl">The Latest</h3>
-                            <div class="columns-2">
-                                <div>
+                            <div class="flex overflow-auto">
+                                <div class="w-2/3 sm:w-1/2 pe-2 shrink-0">
                                     <img class="mx-auto py-2" src="img/article/latest/the_bold_and_the_beautiful.png" width="100%" height="auto" alt="chanel S">
                                     <div class="text-pink-800 uppercase text-sm py-2">
                                         the bold and the beautiful
@@ -125,7 +144,7 @@
                                         Goldilocks orders Goldie Junior to stop sleeping in the bad boy's bed
                                     </div>
                                 </div>
-                                <div>
+                                <div class="w-2/3 sm:w-1/2 ps-2 shrink-0">
                                     <img class="mx-auto py-2" src="img/article/latest/days_of_our_lives.png" width="100%" height="auto" alt="chanel S">
                                     <div class="text-pink-800 uppercase text-sm py-2">
                                         days of our lives
@@ -191,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 ps-10 py-2">
+                    <div class="hidden sm:block col-span-1 ps-10 py-2">
                         <div class="border border-pink-800">
                             <div class="text-pink-800 font-bold text-xl px-4 py-2 border-b border-pink-800">Trending on the Forum</div>
                             <div class="p-4">
@@ -334,7 +353,7 @@
 
     <div class="footer border-b border-gray-400 bg-gray-900 p-8 text-gray-50">
         <div class="container mx-auto">
-            <div class="flex align-start border-b border-gray-400 pb-12">
+            <div class="sm:flex align-start border-b border-gray-400">
                 <div>
                     <div>
                         <img class="" src="img/logo2.png" width="72" alt="most popular">
@@ -357,7 +376,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ms-20">
+                <div class="sm:ms-20 my-12 sm:mt-0">
                     <div class="mb-4">
                         <a href="#">
                             <span class="">Forum</span>
@@ -387,17 +406,17 @@
             </div>
             <div class="footer-bottom text-xs">
                 <div class="flex my-4">
-                    <div class="me-12 py-2">
+                    <div class="me-4 sm:me-12 py-2">
                         <a href="#">
                             <span class="py-2">About Us</span>
                         </a>
                     </div>
-                    <div class="me-12 py-2">
+                    <div class="me-4 sm:me-12 py-2">
                         <a href="#">
                             <span class="py-2">Privacy Policy</span>
                         </a>
                     </div>
-                    <div class="me-12 py-2">
+                    <div class="me-4 sm:me-12 py-2">
                         <a href="#">
                             <span class="py-2">Contact Us</span>
                         </a>

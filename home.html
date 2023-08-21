@@ -1,0 +1,560 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+            // fontFamily: {
+            //     'sans': ['Source Sans Pro']
+            // }
+        }
+    }
+  </script>
+</head>
+<body>
+    <!-- Desktop Header-->
+    <div class="hidden sm:block">
+        <div class="text-center w-100 py-2">
+            <img class="mx-auto" src="img/logo.png" alt="soapcentral logo">
+        </div>
+        <div class="border-y border-pink-800">
+            <div class="container mx-auto py-2">
+                <div class="flex flex-row">
+                    <!-- header social icons -->
+                    <div class="flex flex-row">
+                        <a class="mx-2" href="">
+                            <!-- facebook icon -->
+                            <i class="fab fa-facebook text-pink-800 text-2xl"></i>
+                        </a> 
+                        <a class="mx-2" href="">
+                            <!-- twitter icon -->
+                            <i class="fab fa-twitter text-pink-800 text-2xl"></i>
+                        </a> 
+                        <a class="mx-2" href="">
+                            <!-- insta icon -->
+                            <i class="fab fa-instagram text-pink-800 text-2xl"></i>
+                        </a>
+                    </div>
+                    <!-- //header social icons -->
+    
+                    <!-- header menus -->
+                    <div class="grow flex flex-row justify-center">
+                        <a class="mx-2" href="">Forum</a>
+                        <a class="mx-2" href="">The Bold and the Beautiful</a>
+                        <a class="mx-2" href="">Days of our Lives</a>
+                        <a class="mx-2" href="">General Hospital</a>
+                        <a class="mx-2" href="">The Young and the Restless</a>
+                    </div>
+                    <!-- //header menus -->
+    
+                    <div class="flex-none text-right">
+                        <i class="fas fa-search text-pink-800 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Header-->
+    <div class="header sm:hidden px-4 py-2 border-b border-pink-800">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="cursor-pointer me-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                        <path d="M1 1H22.3333M1 9H22.3333M1 17H10.3333" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="cursor-pointer">
+                    <img class="mx-auto" src="img/logo.png" alt="soapcentral logo">
+                </div>
+            </div>
+            <div class="">
+                <i class="fas fa-search text-pink-800 text-2xl"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container mx-auto">
+            <div class="flex flex-col sm:flex-row py-4">
+                <div class="w-full sm:w-5/12 sm:pe-4 order-first">
+                    <div class="">
+                        <img class="mx-auto my-4" src="img/article/finn.png" width="100%" height="auto" alt="chanel S">
+                    </div>
+                    <div class="px-4 sm:px-0">
+                        <div class="text-pink-800 uppercase text-sm py-2">
+                            The bold and the beautiful
+                        </div>
+                        <div class="text-gray-900 text-2xl font-semibold">
+                            Finn has an emotional breakthrough with his mother
+                        </div>
+                        <div class="text-gray-700 text-base	font-semibold">
+                            At the prison, Finn met Sheila in the visitation area because she'd requested that he conduct her pre-trial exam
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-5/12 sm:px-4 order-last sm:order-2">
+                    <div class="">
+                        <img class="mx-auto my-4" src="img/article/emmy.png" width="100%" height="auto" alt="chanel S">
+                    </div>
+                    <div class="px-4 sm:px-0">
+                        <div class="text-pink-800 uppercase text-sm py-2">
+                            emmys
+                        </div>
+                        <div class="text-gray-900 text-2xl font-semibold">
+                            EMMY INTERVIEW: Krista Allen on one heck of a roller-coaster year for B&B's Taylor
+                        </div>
+                        <div class="text-gray-700 text-base	font-semibold">
+                            Hanging from a rooftop is fine for The Bold and the Beautiful's Krista Allen (Taylor Hayes), but hanging out on the Daytime Emmys red carpet?
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 sm:px-0 sm:order-last w-full sm:w-2/12">
+                    <div class="border border-pink-800 ps-0 sm:ps-2 my-4">
+                        <div class="text-pink-800 font-bold text-xl px-4 py-2 border-b border-pink-800">Trending on the Forum</div>
+                        <div class="p-4">
+                            <div class="text-sm border-b border-gray-300 pb-2 mb-2">
+                                <div>
+                                    <span class="text-gray-700">Channel:</span>
+                                    <span class="text-blue-700 font-semibold">Days of our Lives</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-900 font-semibold">Audio problems on the show now?</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <div>
+                                        <span class="text-gray-700">by</span>
+                                        <span class="text-blue-700">Varlena</span>
+                                    </div>
+                                    <div class="text-gray-500">
+                                        Today 9:30 AM
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-sm border-b border-gray-300 pb-2 mb-2">
+                                <div>
+                                    <span class="text-gray-700">Channel:</span>
+                                    <span class="text-blue-700 font-semibold">The Young and Restless</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-900 font-semibold">Did Summer or the writers forget her last conversation with Phyllis?</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <div>
+                                        <span class="text-gray-700">by</span>
+                                        <span class="text-blue-700">Fanlady</span>
+                                    </div>
+                                    <div class="text-gray-500">
+                                        Today 8:39 AM
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-sm border-b border-gray-300 pb-2 mb-2">
+                                <div>
+                                    <span class="text-gray-700">Channel:</span>
+                                    <span class="text-blue-700 font-semibold">The Young and Restless</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-900 font-semibold">INTERVIEW: Michael Damian on bringing Danny and his music back...</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <div>
+                                        <span class="text-gray-700">by</span>
+                                        <span class="text-blue-700">Holly99</span>
+                                    </div>
+                                    <div class="text-gray-500">
+                                        Today 8:35 AM
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-sm">
+                                <div>
+                                    <span class="text-gray-700">Channel:</span>
+                                    <span class="text-blue-700 font-semibold">General Hospital</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-900 font-semibold">Wow!!! It looks like Willow is softening towards Nina</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <div>
+                                        <span class="text-gray-700">by</span>
+                                        <span class="text-blue-700">Samlexis Fan</span>
+                                    </div>
+                                    <div class="text-gray-500">
+                                        Yesterday 9:34 PM
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-4 px-4 sm:px-0">
+                <div class="bg-pink-800 flex items-center justify-center">
+                    <div class="text-white text-xl font-black py-2">Editor’s Picks</div>
+                </div>
+                <div class="sm:columns-4 py-4">
+                    <div class="mb-4">
+                        <img class="mx-auto" src="img/article/home/1.png" width="100%" height="auto" alt="chanel S">
+                        <div class="text-pink-800 uppercase text-sm py-2">
+                            the bold and the beautiful
+                        </div>
+                        <div class="text-gray-900 text-base	font-semibold">
+                            Five memorable storylines from Andrea Evans' run as One Life to Live's Tina
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <img class="mx-auto" src="img/article/home/2.png" width="100%" height="auto" alt="chanel S">
+                        <div class="text-pink-800 uppercase text-sm py-2">
+                            emmys
+                        </div>
+                        <div class="text-gray-900 text-base	font-semibold">
+                            POSTPONED: 2023 Daytime Emmys ceremony on hold until resolution of WGA strike
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <img class="mx-auto" src="img/article/home/3.png" width="100%" height="auto" alt="chanel S">
+                        <div class="text-pink-800 uppercase text-sm py-2">
+                            the bold and the beautiful
+                        </div>
+                        <div class="text-gray-900 text-base	font-semibold">
+                            INTERVIEW: The Bold and the Beautiful's Thorsten Kaye on Emmy nominations, the fans, and stolen shoes
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <img class="mx-auto" src="img/article/home/4.png" width="100%" height="auto" alt="chanel S">
+                        <div class="text-pink-800 uppercase text-sm py-2">
+                            The Young and the Restless
+                        </div>
+                        <div class="text-gray-900 text-base	font-semibold">
+                            Y&R's Melissa Claire Egan welcomes second child -- baby boy Jake
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <div class="text-pink-800 text-4xl font-bold border-b border-pink-800 pb-2">The Bold And The Beautiful</div>
+                    <div class="flex flex-col-reverse sm:flex-row my-4">
+                        <div class="w-full sm:w-1/2 flex items-end">
+                            <div>
+                                <div class="text-gray-900 text-2xl font-bold mt-2">
+                                    One Life to Live's Andrea Evans has died at age 66
+                                </div>
+                                <div class="text-gray-500 text-base">
+                                    by Dan J Kroll
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2">
+                            <img class="mx-auto" src="img/article/the_bold/main.png" width="100%" height="auto" alt="chanel S">
+                        </div>
+                    </div>
+                    <div class="flex overflow-auto py-2">
+                        <div class="w-2/3 sm:w-1/4 shrink-0 mx-2">
+                            <img class="mx-auto" src="img/article/the_bold/thumb1.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                The Bold and the Beautiful's Annika Noelle and her fiancé have split
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Dan J Kroll
+                            </div>
+                        </div>
+                        <div class="w-2/3 sm:w-1/4 shrink-0 mx-2">
+                            <img class="mx-auto" src="img/article/the_bold/thumb2.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                Goldilocks orders Goldie Junior to stop sleeping in the bad boy's bed
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Chanel S. Garner
+                            </div>
+                        </div>
+                        <div class="w-2/3 sm:w-1/4 shrink-0 mx-2">
+                            <img class="mx-auto" src="img/article/the_bold/thumb3.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                The Bold and the Beautiful's Annika Noelle and her fiancé have split
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Breanne L. Heldman
+                            </div>
+                        </div>
+                        <div class="w-2/3 sm:w-1/4 shrink-0 mx-2">
+                            <img class="mx-auto" src="img/article/the_bold/thumb4.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                VIDEO PREVIEW: Andrea Bocelli to perform for The Bold and the Beautiful's Brooke and Ridge
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Adam-Michael James
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <div class="text-pink-800 text-4xl font-bold border-b border-pink-800 pb-2">Day Of Our Lives</div>
+                    <div class="flex flex-col sm:flex-row py-4">
+                        <div class="w-full sm:w-1/2 sm:me-2 my-2">
+                            <img class="mx-auto" src="img/article/day_of_our_lives/main.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-2xl font-bold mt-2">
+                                General Hospital, Days of our Lives' Tyler Christopher focus of guardianship investigative report
+                            </div>
+                            <div class="text-gray-500 base mt-2">
+                                by Alice Cary
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 sm:ms-2">
+                            <div class="flex">
+                                <div class="w-1/2 me-2 my-2">
+                                    <img class="mx-auto" src="img/article/day_of_our_lives/1.png" width="100%" height="auto" alt="chanel S">                            
+                                    <div class="text-gray-900 text-lg font-semibold mt-2">
+                                        Miranda Wilson exits Days of our Lives
+                                    </div>
+                                    <div class="text-gray-500 text-sm mt-2">
+                                        by Steve Holley
+                                    </div>
+                                </div>
+                                <div class="w-1/2 ms-2 my-2">
+                                    <img class="mx-auto" src="img/article/day_of_our_lives/2.png" width="100%" height="auto" alt="chanel S">                            
+                                    <div class="text-gray-900 text-lg font-semibold mt-2">
+                                        Sloan learns that she is pregnant
+                                    </div>
+                                    <div class="text-gray-500 text-sm mt-2">
+                                        by Dan J Kroll
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/2 me-2 my-2">
+                                    <img class="mx-auto" src="img/article/day_of_our_lives/3.png" width="100%" height="auto" alt="chanel S">                            
+                                    <div class="text-gray-900 text-lg font-semibold mt-2">
+                                        Jessica Serfaty upped to contract status at Days of our Lives
+                                    </div>
+                                    <div class="text-gray-500 text-sm mt-2">
+                                        by Adam-Michael James
+                                    </div>
+                                </div>
+                                <div class="w-1/2 ms-2 my-2">
+                                    <img class="mx-auto" src="img/article/day_of_our_lives/4.png" width="100%" height="auto" alt="chanel S">                            
+                                    <div class="text-gray-900 text-lg font-semibold mt-2">
+                                        INTERVIEW: DAYS' Cary Christopher on his first Emmy nomination -- and why it confused him!
+                                    </div>
+                                    <div class="text-gray-500 text-sm mt-2">
+                                        by Dan J Kroll
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12">
+                    <div class="text-pink-800 text-4xl font-bold border-b border-pink-800 pb-2">General Hospital</div>
+                    <div class="flex flex-col-reverse sm:flex-row py-4">                        
+                        <div class="w-full sm:w-1/2 sm:me-2">
+                            <div class="flex">
+                                <div class="w-1/2 me-2 my-2">
+                                    <img class="mx-auto" src="img/article/general_hospital/1.png" width="100%" height="auto" alt="chanel S">                            
+                                    <div class="text-gray-900 text-lg font-semibold mt-2">
+                                        Sasha is horrified by her actions
+                                    </div>
+                                    <div class="text-gray-500 text-sm mt-2">
+                                        by Steve Holley
+                                    </div>
+                                </div>
+                                <div class="w-1/2 ms-2 my-2">
+                                    <img class="mx-auto" src="img/article/general_hospital/2.png" width="100%" height="auto" alt="chanel S">                            
+                                    <div class="text-gray-900 text-lg font-semibold mt-2">
+                                        General Hospital's "magnetic and powerful" Sprina gets coverage in major publication
+                                    </div>
+                                    <div class="text-gray-500 text-sm mt-2">
+                                        by Dan J Kroll
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/2 me-2 my-2">
+                                    <img class="mx-auto" src="img/article/general_hospital/3.png" width="100%" height="auto" alt="chanel S">                            
+                                    <div class="text-gray-900 text-lg font-semibold mt-2">
+                                        General Hospital's Haley Pullos charged with felony DUI, enters not guilty plea
+                                    </div>
+                                    <div class="text-gray-500 text-sm mt-2">
+                                        by Dan J Kroll
+                                    </div>
+                                </div>
+                                <div class="w-1/2 ms-2 my-2">
+                                    <img class="mx-auto" src="img/article/general_hospital/4.png" width="100%" height="auto" alt="chanel S">                            
+                                    <div class="text-gray-900 text-lg font-semibold mt-2">
+                                        Vinessa Antoine recalls time as "OG Jordan Ashford" on General Hospital
+                                    </div>
+                                    <div class="text-gray-500 text-sm mt-2">
+                                        by Dan J Kroll
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 sm:ms-2 my-2">
+                            <img class="mx-auto" src="img/article/general_hospital/main.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-2xl font-bold mt-2">
+                                GH fave lands Monster gig -- and will be exiting the show in the near future
+                            </div>
+                            <div class="text-gray-500 base mt-2">
+                                by Dan J Kroll
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <div class="text-pink-800 text-4xl font-bold border-b border-pink-800 pb-2">The Young And The Restless</div>
+                    <div class="flex flex-col sm:flex-row py-4">
+                        <div class="w-full sm:w-1/2 me-0 sm:me-2 my-2">
+                            <img class="mx-auto" src="img/article/the_young/main_1.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                A very special someone previews Y&R's tribute to Jerry Douglas (John Abbott)
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Jen Juneau
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 ms-0 sm:ms-2 my-2">
+                            <img class="mx-auto" src="img/article/the_young/main_2.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                Wigs, wide brim hats, and shades
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Dan J Kroll
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex overflow-auto py-4">
+                        <div class="w-2/3 sm:w-1/4 me-2 my-2 shrink-0">
+                            <img class="mx-auto" src="img/article/the_young/thumb1.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                Christine is determined to find what Phyllis is hiding
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Nel
+                            </div>
+                        </div>
+                        <div class="w-2/3 sm:w-1/4 mx-2 my-2 shrink-0">
+                            <img class="mx-auto" src="img/article/the_young/thumb2.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                Y&R INTERVIEW: Kym Douglas, wife of late star Jerry Douglas, previews this week's very special episode dedicated to John Abbott
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Dan J Kroll
+                            </div>
+                        </div>
+                        <div class="w-2/3 sm:w-1/4 mx-2 my-2 shrink-0">
+                            <img class="mx-auto" src="img/article/the_young/thumb3.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                VIDEO: The Young and the Restless cast celebrates the arrival of summer in a fun new video
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Dan J Kroll
+                            </div>
+                        </div>
+                        <div class="w-2/3 sm:w-1/4 ms-2 my-2 shrink-0">
+                            <img class="mx-auto" src="img/article/the_young/thumb4.png" width="100%" height="auto" alt="chanel S">                            
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                The Young and the Restless' Christel Khalil is pregnant!
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                by Dan J Kroll
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer border-b border-gray-400 bg-gray-900 p-8 text-gray-50">
+        <div class="container mx-auto">
+            <div class="sm:flex align-start border-b border-gray-400">
+                <div>
+                    <div>
+                        <img class="" src="img/logo2.png" width="72" alt="most popular">
+                    </div>
+                    <div class="mt-4">
+                        <div class="text-sm mb-2">Follow Us</div>
+                        <div class="flex flex-row">
+                            <a class="me-4" href="">
+                                <!-- facebook icon -->
+                                <i class="fab fa-facebook text-white text-lg"></i>
+                            </a> 
+                            <a class="me-4" href="">
+                                <!-- twitter icon -->
+                                <i class="fab fa-twitter text-white text-lg"></i>
+                            </a> 
+                            <a class="" href="">
+                                <!-- insta icon -->
+                                <i class="fab fa-instagram text-white text-lg"></i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:ms-20 my-12 sm:mt-0">
+                    <div class="mb-4">
+                        <a href="#">
+                            <span class="">Forum</span>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#">
+                            <span>The Bold and the Beautiful</span>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#">
+                            <span>Days of our Lives</span>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#">
+                            <span>General Hospital</span>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#">
+                            <span>The Young and the Restless</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-xs">
+                <div class="flex my-4">
+                    <div class="me-4 sm:me-12 py-2">
+                        <a href="#">
+                            <span class="py-2">About Us</span>
+                        </a>
+                    </div>
+                    <div class="me-4 sm:me-12 py-2">
+                        <a href="#">
+                            <span class="py-2">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div class="me-4 sm:me-12 py-2">
+                        <a href="#">
+                            <span class="py-2">Contact Us</span>
+                        </a>
+                    </div>
+                    <div class="py-2">
+                        <a href="#">
+                            <span class="py-2">Advertise</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="copy-write text-gray-400">
+                    ©2023 Soap Central, Inc. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
