@@ -61,20 +61,37 @@
     </div>
 
     <!-- Mobile Header-->
-    <div class="header sm:hidden px-4 py-2 border-b border-pink-800">
-        <div class="flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="cursor-pointer me-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
-                        <path d="M1 1H22.3333M1 9H22.3333M1 17H10.3333" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+    <div class="sm:hidden">
+        <div class="absolute w-full bg-white hidden" id="nav">
+            <div class="relative">
+                <div class="absolute top-2.5 right-2.5" id="closeButton">
+                    <i class="fas fa-times text-pink-800 text-2xl"></i>
                 </div>
-                <div class="cursor-pointer">
-                    <img class="mx-auto" src="img/logo.png" alt="soapcentral logo">
-                </div>
+                <ul class="text-gray-900 font-bold p-4">
+                    <li class="py-2"><a href="">Forum</a></li>
+                    <li class="py-2"><a  href="">The Bold and the Beautiful</a></li>
+                    <li class="py-2"><a href="">Days of our Lives</a></li>
+                    <li class="py-2"><a href="">General Hospital</a></li>
+                    <li class="py-2"><a href="">The Young and the Restless</a></li>
+                </ul>
             </div>
-            <div class="">
-                <i class="fas fa-search text-pink-800 text-2xl"></i>
+        </div>
+        <div class="px-4 py-2 border-b border-pink-800">
+        
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="cursor-pointer me-4" id="menuButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                            <path d="M1 1H22.3333M1 9H22.3333M1 17H10.3333" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cursor-pointer">
+                        <img class="mx-auto" src="img/logo.png" alt="soapcentral logo">
+                    </div>
+                </div>
+                <div class="">
+                    <i class="fas fa-search text-pink-800 text-2xl"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -82,7 +99,7 @@
     <div class="main">
         <div class="container mx-auto">
             <div class="py-4 px-4 sm:px-0">
-                <div class="mt-12">
+                <div class="mt-4">
                     <h1 class="text-pink-800 text-4xl font-bold border-b border-pink-800 pb-2">Section - 1 Header</h1>
                     <div class="flex flex-col sm:flex-row py-4">
                         <div class="w-full sm:w-1/2 me-0 sm:me-2 my-2">
@@ -268,5 +285,17 @@
             </div>
         </div>
     </div>
+    <script>
+        menuButton.addEventListener('click', function () {
+            let classList = document.getElementById('nav').classList
+            classList.toggle('hidden')
+            classList.toggle('block')
+        })
+        closeButton.addEventListener('click', function () {
+            let classList = document.getElementById('nav').classList
+            classList.toggle('hidden')
+            classList.toggle('block')
+        })
+    </script>
 </body>
 </html>
