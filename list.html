@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+            // fontFamily: {
+            //     'sans': ['Source Sans Pro']
+            // }
+        }
+    }
+  </script>
+</head>
+<body>
+    <!-- Desktop Header-->
+    <div class="hidden sm:block">
+        <div class="text-center w-100 py-2">
+            <img class="mx-auto" src="img/logo.png" alt="soapcentral logo">
+        </div>
+        <div class="border-y border-pink-800">
+            <div class="container mx-auto py-2">
+                <div class="flex flex-row">
+                    <!-- header social icons -->
+                    <div class="flex flex-row">
+                        <a class="mx-2" href="">
+                            <!-- facebook icon -->
+                            <i class="fab fa-facebook text-pink-800 text-2xl"></i>
+                        </a> 
+                        <a class="mx-2" href="">
+                            <!-- twitter icon -->
+                            <i class="fab fa-twitter text-pink-800 text-2xl"></i>
+                        </a> 
+                        <a class="mx-2" href="">
+                            <!-- insta icon -->
+                            <i class="fab fa-instagram text-pink-800 text-2xl"></i>
+                        </a>
+                    </div>
+                    <!-- //header social icons -->
+    
+                    <!-- header menus -->
+                    <div class="grow flex flex-row justify-center">
+                        <a class="mx-2" href="">Forum</a>
+                        <a class="mx-2" href="">The Bold and the Beautiful</a>
+                        <a class="mx-2" href="">Days of our Lives</a>
+                        <a class="mx-2" href="">General Hospital</a>
+                        <a class="mx-2" href="">The Young and the Restless</a>
+                    </div>
+                    <!-- //header menus -->
+    
+                    <div class="flex-none text-right">
+                        <i class="fas fa-search text-pink-800 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Header-->
+    <div class="header sm:hidden px-4 py-2 border-b border-pink-800">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="cursor-pointer me-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                        <path d="M1 1H22.3333M1 9H22.3333M1 17H10.3333" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="cursor-pointer">
+                    <img class="mx-auto" src="img/logo.png" alt="soapcentral logo">
+                </div>
+            </div>
+            <div class="">
+                <i class="fas fa-search text-pink-800 text-2xl"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container mx-auto">
+            <div class="py-4 px-4 sm:px-0">
+                <div class="mt-12">
+                    <h1 class="text-pink-800 text-4xl font-bold border-b border-pink-800 pb-2">Section - 1 Header</h1>
+                    <div class="flex flex-col sm:flex-row py-4">
+                        <div class="w-full sm:w-1/2 me-0 sm:me-2 my-2">
+                            <img class="mx-auto" src="img/list/main1.png" width="100%" height="auto" alt="chanel S">
+                            <div class="mt-4">
+                                <span class="text-white uppercase text-xs font-semibold bg-red-800 px-2 py-1">soap name</span>
+                            </div>
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                A very special someone previews Y&R's tribute to Jerry Douglas (John Abbott)
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                August 14, 2023
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 ms-0 sm:ms-2 my-2">
+                            <img class="mx-auto" src="img/article/the_young/main_2.png" width="100%" height="auto" alt="chanel S">
+                            <div class="mt-4">
+                                <span class="text-white uppercase text-xs font-semibold bg-red-800 px-2 py-1">soap name</span>
+                            </div>
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                Wigs, wide brim hats, and shades
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                August 14, 2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex overflow-auto py-4">
+                        <div class="w-2/3 sm:w-1/4 pe-2 my-2 shrink-0">
+                            <img class="mx-auto" src="img/list/thumb1.png " width="100%" height="auto" alt="chanel S">
+                            <div class="mt-4">
+                                <span class="text-white uppercase text-xs font-semibold bg-red-800 px-2 py-1">soap name</span>
+                            </div>
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                Christine is determined to find what Phyllis is hiding
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                August 14, 2023
+                            </div>
+                        </div>
+                        <div class="w-2/3 sm:w-1/4 px-2 my-2 shrink-0">
+                            <img class="mx-auto" src="img/article/the_young/thumb2.png" width="100%" height="auto" alt="chanel S">
+                            <div class="mt-4">
+                                <span class="text-white uppercase text-xs font-semibold bg-red-800 px-2 py-1">soap name</span>
+                            </div>
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                Y&R INTERVIEW: Kym Douglas, wife of late star Jerry Douglas, previews this week's very special episode dedicated to John Abbott
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                August 14, 2023
+                            </div>
+                        </div>
+                        <div class="w-2/3 sm:w-1/4 px-2 my-2 shrink-0">
+                            <img class="mx-auto" src="img/article/the_young/thumb3.png" width="100%" height="auto" alt="chanel S">
+                            <div class="mt-4">
+                                <span class="text-white uppercase text-xs font-semibold bg-red-800 px-2 py-1">soap name</span>
+                            </div>
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                VIDEO: The Young and the Restless cast celebrates the arrival of summer in a fun new video
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                August 14, 2023
+                            </div>
+                        </div>
+                        <div class="w-2/3 sm:w-1/4 ps-2 my-2 shrink-0">
+                            <img class="mx-auto" src="img/article/the_young/thumb4.png" width="100%" height="auto" alt="chanel S">
+                            <div class="mt-4">
+                                <span class="text-white uppercase text-xs font-semibold bg-red-800 px-2 py-1">soap name</span>
+                            </div>
+                            <div class="text-gray-900 text-lg font-semibold mt-2">
+                                The Young and the Restless' Christel Khalil is pregnant!
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2">
+                                August 14, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer border-b border-gray-400 bg-gray-900 p-8 text-gray-50">
+        <div class="container mx-auto">
+            <div class="sm:flex align-start border-b border-gray-400">
+                <div>
+                    <div>
+                        <img class="" src="img/logo2.png" width="72" alt="most popular">
+                    </div>
+                    <div class="mt-4">
+                        <div class="text-sm mb-2">Follow Us</div>
+                        <div class="flex flex-row">
+                            <a class="me-4" href="">
+                                <!-- facebook icon -->
+                                <i class="fab fa-facebook text-white text-lg"></i>
+                            </a> 
+                            <a class="me-4" href="">
+                                <!-- twitter icon -->
+                                <i class="fab fa-twitter text-white text-lg"></i>
+                            </a> 
+                            <a class="" href="">
+                                <!-- insta icon -->
+                                <i class="fab fa-instagram text-white text-lg"></i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:ms-20 my-12 sm:mt-0">
+                    <div class="mb-4">
+                        <a href="#">
+                            <span class="">Forum</span>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#">
+                            <span>The Bold and the Beautiful</span>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#">
+                            <span>Days of our Lives</span>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#">
+                            <span>General Hospital</span>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#">
+                            <span>The Young and the Restless</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-xs">
+                <div class="flex my-4">
+                    <div class="me-4 sm:me-12 py-2">
+                        <a href="#">
+                            <span class="py-2">About Us</span>
+                        </a>
+                    </div>
+                    <div class="me-4 sm:me-12 py-2">
+                        <a href="#">
+                            <span class="py-2">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div class="me-4 sm:me-12 py-2">
+                        <a href="#">
+                            <span class="py-2">Contact Us</span>
+                        </a>
+                    </div>
+                    <div class="py-2">
+                        <a href="#">
+                            <span class="py-2">Advertise</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="copy-write text-gray-400">
+                    ©2023 Soap Central, Inc. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
