@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
         theme: {
-            // fontFamily: {
-            //     'sans': ['Source Sans Pro']
-            // }
+            fontFamily: {
+                'sans': ['"Source Sans Pro"', 'sans-serif']
+            }
         }
     }
   </script>
@@ -43,7 +43,7 @@
                     <!-- //header social icons -->
     
                     <!-- header menus -->
-                    <div class="grow flex flex-row justify-center">
+                    <div class="grow flex flex-row justify-center text-sm font-semibold items-center">
                         <a class="mx-2" href="">Forum</a>
                         <a class="mx-2" href="">The Bold and the Beautiful</a>
                         <a class="mx-2" href="">Days of our Lives</a>
@@ -67,7 +67,7 @@
                 <div class="absolute top-2.5 right-2.5" id="closeButton">
                     <i class="fas fa-times text-pink-800 text-2xl"></i>
                 </div>
-                <ul class="text-gray-900 font-bold p-4">
+                <ul class="text-gray-900 text-sm font-semibold items-center p-4">
                     <li class="py-2"><a href="">Forum</a></li>
                     <li class="py-2"><a  href="">The Bold and the Beautiful</a></li>
                     <li class="py-2"><a href="">Days of our Lives</a></li>
@@ -100,7 +100,7 @@
         <div class="container mx-auto">
             <div class="py-4 px-4 sm:px-0">
                 <div class="mt-4">
-                    <h1 class="text-pink-800 text-4xl font-bold border-b border-pink-800 pb-2">Section - 1 Header</h1>
+                    <h1 class="text-pink-800 text-4xl font-black border-b border-pink-800 pb-2">Section - 1 Header</h1>
                     <div class="flex flex-col sm:flex-row py-4">
                         <div class="w-full sm:w-1/2 me-0 sm:me-2 my-2">
                             <img class="mx-auto" src="img/list/main1.png" width="100%" height="auto" alt="chanel S">
