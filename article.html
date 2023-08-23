@@ -52,9 +52,24 @@
                     </div>
                     <!-- //header menus -->
     
-                    <div class="flex-none text-right">
-                        <i class="fas fa-search text-pink-800 text-2xl"></i>
+                    <div class="flex items-center text-right cursor-pointer" id="searchBtn" onclick="onSearchBar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M17 17L11.6667 11.6667M13.4444 7.22222C13.4444 10.6587 10.6587 13.4444 7.22222 13.4444C3.78578 13.4444 1 10.6587 1 7.22222C1 3.78578 3.78578 1 7.22222 1C10.6587 1 13.4444 3.78578 13.4444 7.22222Z" stroke="#99154B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
+                    <form class="flex items-center hidden" id="searchBar" onsubmit="searchFunc('searchBar')">
+                        <button type="submit" class="focus:outline-none cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M17 17L11.6667 11.6667M13.4444 7.22222C13.4444 10.6587 10.6587 13.4444 7.22222 13.4444C3.78578 13.4444 1 10.6587 1 7.22222C1 3.78578 3.78578 1 7.22222 1C10.6587 1 13.4444 3.78578 13.4444 7.22222Z" stroke="#99154B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <input type="text" id="default-search" name="keywords" class="ps-2 focus:outline-none search-cancel:fill-pink-800 search-cancel:h-10 search-cancel:w-10" placeholder="Search..." required>
+                        <div class="cursor-pointer" onclick="searchClose()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M1 17L17 1M1 1L17 17" stroke="#99154B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -62,12 +77,46 @@
 
     <!-- Mobile Header-->
     <div class="sm:hidden">
-        <div class="absolute w-full bg-white hidden" id="nav">
-            <div class="relative">
-                <div class="absolute top-2.5 right-2.5" id="closeButton">
-                    <i class="fas fa-times text-pink-800 text-2xl"></i>
+        <div class="flex items-center justify-between px-4 py-2 border-b border-pink-800 h-16">
+            <div class="flex justify-between w-full items-center">
+                <div class="flex items-center" id="searchLogo">
+                    <div class="cursor-pointer me-4" id="menuButton" onclick="onMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                            <path d="M1 1H22.3333M1 9H22.3333M1 17H10.3333" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cursor-pointer me-5 hidden" id="closeButton" onclick="onMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M1 17L17 1M1 1L17 17" stroke="#161E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cursor-pointer">
+                        <img class="mx-auto w-36" src="img/logo_mobile.png" alt="soapcentral logo">
+                    </div>
                 </div>
-                <ul class="text-gray-900 text-sm font-semibold items-center p-4">
+                <div class="flex-none text-right" id="searchBtnMobile" onclick="onSearchBarMobile()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M17 17L11.6667 11.6667M13.4444 7.22222C13.4444 10.6587 10.6587 13.4444 7.22222 13.4444C3.78578 13.4444 1 10.6587 1 7.22222C1 3.78578 3.78578 1 7.22222 1C10.6587 1 13.4444 3.78578 13.4444 7.22222Z" stroke="#99154B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <form class="flex grow items-center hidden" id="searchBarMobile" onsubmit="searchFunc('searchBarMobile')">
+                    <button type="submit" class="focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M17 17L11.6667 11.6667M13.4444 7.22222C13.4444 10.6587 10.6587 13.4444 7.22222 13.4444C3.78578 13.4444 1 10.6587 1 7.22222C1 3.78578 3.78578 1 7.22222 1C10.6587 1 13.4444 3.78578 13.4444 7.22222Z" stroke="#99154B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <input type="text" id="default-search" name="keywords" class="w-full ps-2 focus:outline-none" placeholder="Search..." required>
+                    <div class="" onclick="onSearchBarMobile()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M1 17L17 1M1 1L17 17" stroke="#99154B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="w-full h-screen flex flex-col justify-between bg-pink-800 hidden text-white" id="nav">
+            <div class="container mx-auto">
+                <ul class="text-2xl	font-semibold items-center p-4">
                     <li class="py-2"><a href="">Forum</a></li>
                     <li class="py-2"><a  href="">The Bold and the Beautiful</a></li>
                     <li class="py-2"><a href="">Days of our Lives</a></li>
@@ -75,28 +124,63 @@
                     <li class="py-2"><a href="">The Young and the Restless</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="px-4 py-2 border-b border-pink-800">
-        
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <div class="cursor-pointer me-4" id="menuButton">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
-                            <path d="M1 1H22.3333M1 9H22.3333M1 17H10.3333" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+            <div class="footer p-4 pb-0">
+                <div class="container mx-auto">
+                    <div class="border-y py-4 border-white">
+                        <div class="sm:flex align-start">
+                            <div class="mt-4">
+                                <div class="text-base mb-2">Follow Us</div>
+                                <div class="flex flex-row">
+                                    <a class="me-4" href="">
+                                        <!-- facebook icon -->
+                                        <i class="fab fa-facebook text-white text-lg"></i>
+                                    </a> 
+                                    <a class="me-4" href="">
+                                        <!-- twitter icon -->
+                                        <i class="fab fa-twitter text-white text-lg"></i>
+                                    </a> 
+                                    <a class="" href="">
+                                        <!-- insta icon -->
+                                        <i class="fab fa-instagram text-white text-lg"></i>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom text-base">
+                            <div class="flex flex-wrap my-4">
+                                <div class="me-8 sm:me-12 py-2">
+                                    <a href="#">
+                                        <span class="py-2">About Us</span>
+                                    </a>
+                                </div>
+                                <div class="me-8 sm:me-12 py-2">
+                                    <a href="#">
+                                        <span class="py-2">Privacy Policy</span>
+                                    </a>
+                                </div>
+                                <div class="me-8 sm:me-12 py-2">
+                                    <a href="#">
+                                        <span class="py-2">Contact Us</span>
+                                    </a>
+                                </div>
+                                <div class="py-2">
+                                    <a href="#">
+                                        <span class="py-2">Advertise</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cursor-pointer">
-                        <img class="mx-auto" src="img/logo.png" alt="soapcentral logo">
+                    <div class="copy-write text-xs py-4">
+                        ©2023 Soap Central, Inc. All Rights Reserved.
                     </div>
-                </div>
-                <div class="">
-                    <i class="fas fa-search text-pink-800 text-2xl"></i>
+                    
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="main">
+    <div class="main" id="main">
         <div class="container mx-auto">
             <div class="article text-gray-700">
                 <div class="px-4 sm:px-0">
@@ -368,7 +452,7 @@
         </div>
     </div>
 
-    <div class="footer border-b border-gray-400 bg-gray-900 p-8 text-gray-50">
+    <div class="footer border-b border-gray-400 bg-gray-900 p-8 text-gray-50" id="footer">
         <div class="container mx-auto">
             <div class="sm:flex align-start border-b border-gray-400">
                 <div>
@@ -450,17 +534,72 @@
             </div>
         </div>
     </div>
+    
     <script>
-        menuButton.addEventListener('click', function () {
+        function onMenu() {
             let classList = document.getElementById('nav').classList
             classList.toggle('hidden')
             classList.toggle('block')
-        })
-        closeButton.addEventListener('click', function () {
-            let classList = document.getElementById('nav').classList
+
+            let menuButtonclassList = document.getElementById('menuButton').classList
+            menuButtonclassList.toggle('hidden')
+            menuButtonclassList.toggle('block')
+
+            let closeButtonclassList = document.getElementById('closeButton').classList
+            closeButtonclassList.toggle('hidden')
+            closeButtonclassList.toggle('block')
+
+            let mainclassList = document.getElementById('main').classList
+            mainclassList.toggle('hidden')
+            mainclassList.toggle('block')
+
+            let footerclassList = document.getElementById('footer').classList
+            footerclassList.toggle('hidden')
+            footerclassList.toggle('block')
+        }
+
+        function onSearchBar() {
+            let classList = document.getElementById('searchBar').classList
             classList.toggle('hidden')
             classList.toggle('block')
-        })
+            
+            let searchBtnclassList = document.getElementById('searchBtn').classList
+            searchBtnclassList.toggle('hidden')
+            searchBtnclassList.toggle('block')
+        }
+        
+        function onSearchBarMobile() {
+            this.onMenu();
+            let logoclassList = document.getElementById('searchLogo').classList
+            logoclassList.toggle('hidden')
+            logoclassList.toggle('block')
+
+            let searchBarMobileclassList = document.getElementById('searchBarMobile').classList
+            searchBarMobileclassList.toggle('hidden')
+            searchBarMobileclassList.toggle('block')
+            
+            let searchBtnMobileclassList = document.getElementById('searchBtnMobile').classList
+            searchBtnMobileclassList.toggle('hidden')
+            searchBtnMobileclassList.toggle('block')
+        }
+
+        function searchClose() {
+            let classList = document.getElementById('searchBar').classList
+            classList.toggle('hidden')
+            classList.toggle('block')
+
+            let searchBtnclassList = document.getElementById('searchBtn').classList
+            searchBtnclassList.toggle('hidden')
+            searchBtnclassList.toggle('block')
+            
+        }       
+
+        function searchFunc( form ){
+            var action_src = "./search.html?" + document.getElementsByName("keywords")[0].value;
+            var search_form = document.getElementById(form);
+            search_form.action = action_src ;
+        }
+        
     </script>
 </body>
 </html>
